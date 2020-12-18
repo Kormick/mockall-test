@@ -1,0 +1,9 @@
+[package]
+name = "mockall-test"
+version = "0.0.0"
+authors = ["Renat Mukhametzanov <mrkormick@gmail.com>"]
+edition = "2018"
+publish = false
+
+[dependencies]
+mockall = "0.8.3"
