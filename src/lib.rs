@@ -23,6 +23,8 @@ fn test_get_same_types() {
     assert_eq!(storage.get::<i32>(), 0);
 }
 
+/// Panics with:
+/// panicked at 'called `Result::unwrap()` on an `Err` value: TypeMismatch { expected: "[ONLY ON NIGHTLY]", found: "[ONLY ON NIGHTLY]" }'
 #[test]
 fn test_get_different_types() {
     let mut storage = MockStorage::default();
